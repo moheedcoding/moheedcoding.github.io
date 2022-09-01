@@ -9,6 +9,11 @@ body{
     flex-direction:column;
 }
 
+@font-face{
+    font-family:logoFont;
+    src:url('../font/logoFont.ttf');
+}
+
 /*header coding start here*/
 
 header{
@@ -39,7 +44,7 @@ header li{
 #logo{
     margin:0 auto;
     font-size:15px;
-    font-family:arial;
+    font-family:logoFont;
 }
 /*header coding end here*/
 
@@ -163,7 +168,7 @@ footer a:hover{
     }
     
     #logo a{
-    color:red;}
+    color:black;}
     
     #main{
         flex-direction:column;
