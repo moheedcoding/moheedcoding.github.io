@@ -160,9 +160,10 @@ footer a:hover{
     }
     #logo{
         order:-1;
-        color:red;
-        font-family:arial;
     }
+    
+    #logo a{
+    color:red;}
     
     #main{
         flex-direction:column;
