@@ -1,0 +1,177 @@
+@charset "htf-8";
+*{box-sizing:border-box;}
+a:hover{text-decoration:none;}
+a{text-decoration:none;}
+body{
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction:column;
+}
+
+/*header coding start here*/
+
+header{
+    background-color:lightgreen;
+    font-family:arial;
+    display:flex;
+    align-items:center;
+    padding:10px;
+}
+
+header #menu ul, header #social-links ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+    display:flex;
+}
+header a{
+    color:black;
+}
+header a:hover{
+    color:white;
+}
+
+header li{
+    margin:10px;
+}
+
+#logo{
+    margin:0 auto;
+    font-size:15px;
+    font-family:scream real;
+}
+/*header coding end here*/
+
+/*services-container coding start*/
+#main{
+    display:flex;
+    margin-bottom:10px;
+    padding:3px;
+}
+aside{
+    flex:0 0 20vw;
+    padding:10px;
+    background-color:beige;
+}
+
+aside ul{
+    list-style:none;
+    padding:0;
+    margin:20px 0;
+}
+
+aside li{
+    margin-top:15px;
+    border-bottom:1px solid #ccc;
+}
+
+aside img{
+    width:100%;
+}
+
+
+article{
+    padding:10px;
+}
+
+.services-container{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.service-box{
+    display:flex;
+    flex-direction:column;
+    flex-basis:32%;
+    max-width:370px;
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+.service-box p{
+    padding:0 0 10px 0;
+}
+.service-box h3{
+    padding:0 0 5px 0;
+}
+.service-box img{
+    width:100%;
+}
+
+.more-info a{
+    background-color:grey;
+    color:white;
+    padding:10px 15px;
+    border:1px solid transparent;
+}
+.more-info a:hover{
+    background-color:transparent;
+    border:1px solid grey;
+    color:grey;
+}
+
+
+.more-info{
+    align-self:flex-start;
+    margin-top:auto;
+}
+.more-info a{
+    display:block;
+}
+/*services-container coding end*/
+
+
+
+footer{
+    background-color:lightgreen;
+    padding:20px;
+    text-align:center;
+    font-family:scream real;
+}
+footer a{
+    color:black;
+}
+footer a:hover{
+    color:white;
+}
+
+
+
+
+
+@media screen and (max-width:850px){
+    aside{
+        flex:0 0 30vw;
+    }
+    
+    .service-box{
+        flex-basis:48%;
+        margin-bottom:10px;
+    }
+}
+
+
+
+@media screen and (max-width:600px){
+    header{
+        flex-direction:column;
+    }
+    #logo{
+        order:-1;
+    }
+    
+    #main{
+        flex-direction:column;
+    }
+    aside{
+        order:-1;
+        text-align:center;
+    }
+    
+    .services-container{
+        flex-direction:column;
+        align-items:center;
+    }
+}
