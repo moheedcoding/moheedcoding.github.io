@@ -161,6 +161,7 @@ footer a:hover{
     #logo{
         order:-1;
         color:red;
+        font-family:arial;
     }
     
     #main{
